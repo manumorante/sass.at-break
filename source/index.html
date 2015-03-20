@@ -6,6 +6,10 @@
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/scss.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -21,17 +25,20 @@
   </header>
 
 <pre>
-  <code>
+<code class="scss">
   @import 'm.breakpoints';
 
   .col {
     width: 100%;
-    @include at-small  { width: 50% }
-    @include at-medium { width: 33% }
-    @include at-large  { width: 25% }
+    @include at-small  { width: 50%; }
+    @include at-medium { width: 33%; }
+    @include at-large  { width: 25%; }
   }
-  </code>
+</code>
 </pre>
+
+  <a class="btn btn-default" href="https://github.com/manumorante/sass.breakpoints/" target="_blank">
+    <i class="fa fa-github-alt"></i> View on GitHub</a>
 
   <h3>
     You are in a
@@ -56,9 +63,6 @@
     <span class="only-medium">medium</span>
     <span class="only-large">large.</span>
   </h3>
-
-  <a class="btn btn-default" href="https://github.com/manumorante/sass.breakpoints/" target="_blank">
-    <i class="fa fa-github-alt"></i> View on GitHub</a>
 
 </div>
 </body>

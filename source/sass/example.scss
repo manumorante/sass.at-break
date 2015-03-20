@@ -1,11 +1,11 @@
 @import 'lib/m.breakpoints';
 
 // Example:
-$bp-color: #AC7; // ACT http://bada55.io/ac7
+$bp-color: #BADA55; // BADASS http://bada55.io/ac7
 
-span{
+h3 span{
   display: none;
-  color: darken($bp-color, 30);
+  color: saturate($bp-color, 1);
 }
 
 .H0,
@@ -48,7 +48,7 @@ span{
 // Decoration
 body{
   color: darken($bp-color, 15);
-  background-color: lighten($bp-color,25);
+  background-color: rgba($bp-color,.1);
 }
 
 h1{
@@ -62,7 +62,7 @@ h2{
 
 h3{
   font-weight: normal;
-  background-color: lighten($bp-color, 18);
+  background-color: rgba($bp-color,.2);
   padding: 2.5rem;
   border-radius: 1rem;
 }
