@@ -1,1 +1,1 @@
-# Breakpoints SASS mixin
+# MM Break Point SASS Mixin

@@ -1,0 +1,77 @@
+@import 'lib/m.breakpoints';
+
+// Example:
+$bp-color: #AC7; // ACT http://bada55.io/ac7
+
+span{
+  display: none;
+  color: darken($bp-color, 30);
+}
+
+.H0,
+.V0 {
+  display: inline;
+}
+
+@mixin l($d,$on,$off){
+  .#{$d}#{$on} { display: inline }
+  .#{$d}#{$off}{ display: none }
+}
+
+/*
+ * Using M-Breakpoints library mixins
+ */
+@include at-xsmall{ @include l(H,1,0) }
+@include at-small { @include l(H,2,1) }
+@include at-medium{ @include l(H,3,2) }
+@include at-large { @include l(H,4,3) }
+
+@include at-xsmall-h { @include l(V,1,0) }
+@include at-small-h  { @include l(V,2,1) }
+@include at-medium-h { @include l(V,3,2) }
+@include at-large-h  { @include l(V,4,3) }
+
+.only-xsmall,
+.only-small,
+.only-medium,
+.only-large {
+  display: none;
+}
+
+@include only-xsmall { .only-xsmall { display: inline; } }
+@include only-small  { .only-small  { display: inline; } }
+@include only-medium { .only-medium { display: inline; } }
+@include only-large  { .only-large  { display: inline; } }
+
+
+
+// Decoration
+body{
+  color: darken($bp-color, 15);
+  background-color: lighten($bp-color,25);
+}
+
+h1{
+  color: darken($bp-color, 30);;
+  margin: 40px 0 15px 0;
+}
+
+h2{
+  margin: -10px 0 15px 0;
+}
+
+h3{
+  font-weight: normal;
+  background-color: lighten($bp-color, 18);
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+header{
+  margin: 0 0 50px 0;
+}
+
+.alert-info{
+  position: absolute;
+  bottom: 0;
+}
