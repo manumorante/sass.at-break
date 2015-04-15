@@ -8,6 +8,11 @@ Requires Sass 3.2, which was just recently released. Respond-to should install S
 
 `gem install sass`
 
+## Install
+
+Include at-break.scss in your proyect using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
+
+
 ## API
 
 At-break is driven...
