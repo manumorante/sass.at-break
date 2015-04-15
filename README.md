@@ -1,6 +1,6 @@
-# sass.breakpoint (at-break)
+# At Break (Breakpoint SASS Mixin)
 
-At-break is a nice, natural language way to name and remember your breakpoints for you!
+At Break is a nice, natural language way to name and remember your breakpoints for you!
 
 ## Requirements
 
