@@ -13,9 +13,24 @@ Requires Sass 3.2, which was just recently released. Respond-to should install S
 Include at-break.scss in your proyect using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
 
 
-## API
+## Usage
 
-At-break is driven...
+At-break use the mobile first way and the Twitter Bootstrap breakpint sizes.
+
+
+```scss
+// Widths:
+480px
+768px
+992px
+1200px
+
+// Heights:
+300px
+480px
+620px
+750px
+```
 
 ### @include at-small()
 
