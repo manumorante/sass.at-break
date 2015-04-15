@@ -1,6 +1,6 @@
 # sass.breakpoint (at-break)
 
-You've always wanted a nice, natural language way to name and remember your breakpoints, and now you can have it! For you to use in your projects now!
+At-break is a nice, natural language way to name and remember your breakpoints for you!
 
 ## Requirements
 
