@@ -1,5 +1,4 @@
-# sass.breakpoint
-## (at-breaks)
+# sass.breakpoint (at-break)
 
 You've always wanted a nice, natural language way to name and remember your breakpoints, and now you can have it! For you to use in your projects now!
 
