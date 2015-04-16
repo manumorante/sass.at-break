@@ -1,6 +1,6 @@
-# At Break (Breakpoint SASS Mixin)
+# At Break
 
-At Break is a nice, natural language way to use breakpoints!
+**A Break** is a breakpoint SASS mixin nice, natural language, compatible with [Bootstrap](http://getbootstrap.com/) to include in your project!
 
 ## Requirements
 
@@ -12,11 +12,11 @@ Include `at-break.scss` in your proyect using [`@import 'at-break.scss'`](https:
 
 ## Usage
 
-At-break use the mobile first way.
+**A Break** use the mobile first way.
 
 ### Sizes
 
-At-break use the [Twitter Bootstrap breakpint sizes](http://getbootstrap.com/css/#grid).
+**A Break** use the [Twitter Bootstrap breakpint sizes](http://getbootstrap.com/css/#grid).
 
 Width | Height
 ---    | ---
