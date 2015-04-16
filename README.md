@@ -18,12 +18,9 @@ Include `at-break.scss` in your proyect using [`@import 'at-break.scss'`](https:
 
 **A Break** use the [Twitter Bootstrap breakpint sizes](http://getbootstrap.com/css/#grid).
 
-Width | Height
----    | ---
-480px  | 300px
-768px  | 480px
-992px  | 620px
-1200px | 750px
+xsmall | small | medium | large
+---    | ---   | ---    | ---
+480px  | 768px | 992px  | 1200px
 
 ### Mixins
 
