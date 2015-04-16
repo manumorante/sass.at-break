@@ -31,18 +31,14 @@ At-break use the mobile first way and the Twitter Bootstrap breakpint sizes.
 @include at-large  {}
 ```
 
-### @include at-small()
-
-The `@include at-small()` mixin ...
-
 ## Usage Example
 
 ```scss
 .col {
   width: 100%;
-  @include at-small     { width: 50%; }
+  @include at-small  { width: 50%; }
   @include at-medium { width: 33%; }
-  @include at-large      { width: 25%; }
+  @include at-large  { width: 25%; }
 }
 ```
 
