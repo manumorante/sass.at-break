@@ -1,35 +1,34 @@
 # At Break (Breakpoint SASS Mixin)
 
-At Break is a nice, natural language way to name and remember your breakpoints for you!
+At Break is a nice, natural language way to use breakpoints!
 
 ## Requirements
 
-Requires Sass 3.2, which was just recently released. Respond-to should install Sass 3.2 for you when you install it, but in case you are getting errors, open up your terminal and type the following in:
-
-`gem install sass`
+Requires Sass 3.2, which was just recently released.
 
 ## Install
 
-Include at-break.scss in your proyect using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
-
+Include `at-break.scss` in your proyect using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
 
 ## Usage
 
 At-break use the mobile first way and the Twitter Bootstrap breakpint sizes.
 
+### Sizes
+
+*Widths*
+480px, 768px, 992px, 1200px
+
+*Heights*
+300px, 480px, 620px, 750px
+
+### Mixins
 
 ```scss
-// Widths:
-480px
-768px
-992px
-1200px
-
-// Heights:
-300px
-480px
-620px
-750px
+@include at-xsmall {}
+@include at-small  {}
+@include at-medium {}
+@include at-large  {}
 ```
 
 ### @include at-small()
