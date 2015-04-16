@@ -38,50 +38,29 @@ The `@include at-small()` mixin ...
 ## Usage Example
 
 ```scss
-.foo {
-  @include at-small {
-    content: 'Samall';
-  }
-}
-
-.bar {
-  @include at-medium {
-    content: 'Smedium';
-  }
-}
-
-.baz {
-  @include at-large {
-    content: 'Slarge';
-  }
+.col {
+  width: 100%;
+  @include at-small     { width: 50%; }
+  @include at-medium { width: 33%; }
+  @include at-large      { width: 25%; }
 }
 ```
 
 ```css
+.col { width: 100%; }
+
 @media (min-width: 768px) {
-  .foo {
-    content: 'Samall';
-  }
+  .col { width: 50%; }
 }
 
 @media (min-width: 992px) {
-  .bar {
-    content: 'Smedium';
-  }
+  .col { width: 33%; }
 }
 
 @media (min-width: 1200px) {
-  .baz {
-    content: 'Slarge';
-  }
+  .col { width: 25%; }
 }
 ```
-
-## Options
-
-A few default options that you can change.
-
-* `$breakpoint-default-media` - Defaults to 'all'. If you...
 
 ## License
 
