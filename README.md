@@ -12,9 +12,11 @@ Include `at-break.scss` in your proyect using [`@import 'at-break.scss'`](https:
 
 ## Usage
 
-At-break use the mobile first way and the Twitter Bootstrap breakpint sizes.
+At-break use the mobile first way.
 
 ### Sizes
+
+At-break use the Twitter Bootstrap breakpint sizes.
 
 *Widths*
 480px, 768px, 992px, 1200px
@@ -31,7 +33,7 @@ At-break use the mobile first way and the Twitter Bootstrap breakpint sizes.
 @include at-large  {}
 ```
 
-## Usage
+### Usage example
 
 SASS
 
