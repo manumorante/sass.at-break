@@ -16,13 +16,14 @@ At-break use the mobile first way.
 
 ### Sizes
 
-At-break use the Twitter Bootstrap breakpint sizes.
+At-break use the [Twitter Bootstrap breakpint sizes](http://getbootstrap.com/css/#grid).
 
-*Widths*
-480px, 768px, 992px, 1200px
-
-*Heights*
-300px, 480px, 620px, 750px
+Width | Height
+---    | ---
+480px  | 300px
+768px  | 480px
+992px  | 620px
+1200px | 750px
 
 ### Mixins
 
