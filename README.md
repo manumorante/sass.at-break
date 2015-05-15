@@ -1,6 +1,6 @@
 # At Break
 
-**A Break** is a breakpoint SASS mixin nice, natural language, compatible with [Bootstrap](http://getbootstrap.com/) to include in your project!
+**At Break** is a breakpoint SASS mixin nice, natural language, compatible with [Bootstrap](http://getbootstrap.com/) to include in your project!
 
 ## Requirements
 
