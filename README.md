@@ -8,7 +8,7 @@ Requires Sass 3.2, which was just recently released.
 
 ## Install
 
-Include `at-break.scss` in your proyect using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
+Include `at-break.scss` in your project using [`@import 'at-break.scss'`](https://github.com/manumorante/sass.at-break/blob/master/source/sass/lib/at-break.scss).
 
 ## Usage
 
