@@ -12,7 +12,7 @@ Include `at-break.scss` in your project using [`@import 'at-break.scss'`](https:
 
 ## Usage
 
-**A Break** use the mobile first way.
+**At Break** use the mobile first way.
 
 ### Sizes
 
