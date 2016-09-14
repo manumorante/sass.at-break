@@ -1,53 +1,52 @@
 // At Break v1.4
 // Manu Morante @unavezfui
-// Last update: 13/09/2016
+// Last update: 16/04/2015
 // http://github.com/manumorante/sass.at-break/
 //
 // Usage
+//
 // .col {
 //   width: 100%;
-//   @include at-small{
-//    width: 50%;
-//   }
+//   @include at-small { width: 50%; }
 // }
+
+// Breakpoints (Bootstrap standard, mobile first)
+$at-break-xsmall:  480px !default;
+$at-break-small:   768px !default;
+$at-break-medium:  992px !default;
+$at-break-large:  1200px !default;
 
 @mixin at-break($breakpoint, $only: false) {
 
-  // Breakpoints (Bootstrap standard, mobile first)
-  $xsmall:  480px;
-  $small:   768px;
-  $medium:  992px;
-  $large:  1200px;
-
   // Only
   @if $only {
-    @if $breakpoint == xsmall{
-      @media (max-width: $small - 1px) { @content; }
+    @if $breakpoint == $at-break-xsmall {
+      @media (max-width: $at-break-small - 1px) { @content }
 
-    } @else if $breakpoint == small{
-      @media (min-width: $small) and (max-width: $medium - 1px) { @content; }
+    } @else if $breakpoint == $at-break-small {
+      @media (min-width: $at-break-small) and (max-width: $at-break-medium - 1px) { @content }
 
-    } @else if $breakpoint == medium{
-      @media (min-width: $medium) and (max-width: $large - 1px) { @content; }
+    } @else if $breakpoint == $at-break-medium {
+      @media (min-width: $at-break-medium) and (max-width: $at-break-large - 1px) { @content }
 
-    } @else if $breakpoint == large{
-      @media (min-width: $large) { @content; }
+    } @else if $breakpoint == large {
+      @media (min-width: $at-break-large) { @content }
     }
 
   } @else{
-    @media (min-width:  $breakpoint) { @content; }
+    @media (min-width: $breakpoint) { @content }
   }
 }
 
 // Horizontal
-@mixin at-xsmall        { @include at-break(xsmall)       { @content; }}
-@mixin at-small         { @include at-break(small)        { @content; }}
-@mixin at-medium        { @include at-break(medium)       { @content; }}
-@mixin at-large         { @include at-break(large)        { @content; }}
+@mixin at-xsmall        { @include at-break($at-break-xsmall)       { @content }}
+@mixin at-small         { @include at-break($at-break-small)        { @content }}
+@mixin at-medium        { @include at-break($at-break-medium)       { @content }}
+@mixin at-large         { @include at-break($at-break-large)        { @content }}
 
 
 // Only
-@mixin only-xsmall      { @include at-break(xsmall, true) { @content; }}
-@mixin only-small       { @include at-break(small,  true) { @content; }}
-@mixin only-medium      { @include at-break(medium, true) { @content; }}
-@mixin only-large       { @include at-break(large,  true) { @content; }}
+@mixin at-xsmall-only   { @include at-break($at-break-xsmall, true) { @content }}
+@mixin at-small-only    { @include at-break($at-break-small,  true) { @content }}
+@mixin at-medium-only   { @include at-break($at-break-medium, true) { @content }}
+@mixin at-large-only    { @include at-break($at-break-large,  true) { @content }}

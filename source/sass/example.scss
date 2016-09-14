@@ -12,30 +12,26 @@ h3 span{
   display: inline;
 }
 
-@mixin l($d,$on,$off){
-  .#{$d}#{$on} { display: inline }
-  .#{$d}#{$off}{ display: none }
+@mixin l($d, $on, $off){
+  .#{$d}#{$on}  { display: inline }
+  .#{$d}#{$off} { display: none }
 }
 
-/*
- * Using M-Breakpoints library mixins
- */
+// Using M-Breakpoints library mixins
 @include at-xsmall{ @include l(H,1,0) }
 @include at-small { @include l(H,2,1) }
 @include at-medium{ @include l(H,3,2) }
 @include at-large { @include l(H,4,3) }
 
-.only-xsmall,
-.only-small,
-.only-medium,
-.only-large {
-  display: none;
-}
+.xsmall-only,
+ .small-only,
+.medium-only,
+ .large-only { display: none }
 
-@include only-xsmall { .only-xsmall { display: inline; } }
-@include only-small  { .only-small  { display: inline; } }
-@include only-medium { .only-medium { display: inline; } }
-@include only-large  { .only-large  { display: inline; } }
+@include at-xsmall-only { .xsmall-only { display: inline }}
+@include  at-small-only {  .small-only { display: inline }}
+@include at-medium-only { .medium-only { display: inline }}
+@include  at-large-only {  .large-only { display: inline }}
 
 
 
@@ -46,7 +42,7 @@ body{
 }
 
 h1{
-  color: darken($bp-color, 30);;
+  color: darken($bp-color, 30);
   margin: 40px 0 15px 0;
 }
 
