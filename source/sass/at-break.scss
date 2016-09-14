@@ -29,7 +29,7 @@ $at-break-large:  1200px !default;
     } @else if $breakpoint == $at-break-medium {
       @media (min-width: $at-break-medium) and (max-width: $at-break-large - 1px) { @content }
 
-    } @else if $breakpoint == large {
+    } @else if $breakpoint == $at-break-large {
       @media (min-width: $at-break-large) { @content }
     }
 

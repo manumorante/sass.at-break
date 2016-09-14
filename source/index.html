@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/scss.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -34,6 +33,10 @@
     @include at-medium { width: 33%; }
     @include at-large  { width: 25%; }
   }
+
+  .on-mobile {
+    @include at-small-only  { display: block; }
+  }
 </code>
 </pre>
 
@@ -41,23 +44,26 @@
     <i class="fa fa-github-alt"></i> View on GitHub</a>
 
   <h3>
-    You are in a
-    <span class="H0">none </span>
-    <span class="H1">xsmall </span>
-    <span class="H2">small </span>
-    <span class="H3">medium </span>
-    <span class="H4">large </span>
-    breakpoint.
+    Mobile-first breakpoints
+    <span class="at-none">none </span>
+    <span class="at-xsmall">xsmall </span>
+    <span class="at-small">small </span>
+    <span class="at-medium">medium </span>
+    <span class="at-large">large </span>
   </h3>
 
   <h3>
     You can see this only in
-    <span class="only-xsmall">xsmall</span>
-    <span class="only-small">small</span>
-    <span class="only-medium">medium</span>
-    <span class="only-large">large.</span>
+    <span class="at-xsmall-only">xsmall</span>
+    <span class="at-small-only">small</span>
+    <span class="at-medium-only">medium</span>
+    <span class="at-large-only">large.</span>
   </h3>
 
 </div>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>

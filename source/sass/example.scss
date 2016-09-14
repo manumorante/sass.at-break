@@ -1,38 +1,25 @@
-@import 'lib/at-break';
+@import 'at-break';
 
 // Example:
 $bp-color: #8DA1B9;
 
 h3 span{
-  display: none;
   color: saturate($bp-color, 1);
 }
 
-.H0 {
-  display: inline;
-}
 
-@mixin l($d, $on, $off){
-  .#{$d}#{$on}  { display: inline }
-  .#{$d}#{$off} { display: none }
-}
+.at-xsmall, .at-small, .at-medium, .at-large,
+.at-xsmall-only, .at-small-only, .at-medium-only, .at-large-only { display: none }
 
-// Using M-Breakpoints library mixins
-@include at-xsmall{ @include l(H,1,0) }
-@include at-small { @include l(H,2,1) }
-@include at-medium{ @include l(H,3,2) }
-@include at-large { @include l(H,4,3) }
+@include at-xsmall { .at-xsmall { display: inline }}
+@include at-small  { .at-small { display: inline  }}
+@include at-medium { .at-medium { display: inline }}
+@include at-large  { .at-large { display: inline  }}
 
-.xsmall-only,
- .small-only,
-.medium-only,
- .large-only { display: none }
-
-@include at-xsmall-only { .xsmall-only { display: inline }}
-@include  at-small-only {  .small-only { display: inline }}
-@include at-medium-only { .medium-only { display: inline }}
-@include  at-large-only {  .large-only { display: inline }}
-
+@include at-xsmall-only { .at-xsmall-only { display: inline }}
+@include at-small-only  { .at-small-only  { display: inline }}
+@include at-medium-only { .at-medium-only { display: inline }}
+@include at-large-only  { .at-large-only  { display: inline }}
 
 
 // Decoration
@@ -65,3 +52,6 @@ header{
   position: absolute;
   bottom: 0;
 }
+
+
+@import "//codepen.io/unavezfui/pen/FsGHp.css";
