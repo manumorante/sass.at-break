@@ -1,6 +1,6 @@
 {
   "name": "At-Break",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.8.10"
@@ -8,11 +8,11 @@
   "devDependencies": {
     "del": "^1.1.1",
     "gulp": "^3.9.1",
-    "gulp-compass": "^2.0.3",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^2.2.0",
-    "gulp-gh-pages": "^0.5.0",
-    "gulp-watch": "^4.1.0",
-    "sassdoc": "^2.2.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
