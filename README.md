@@ -39,8 +39,6 @@ SASS
 .col {
   width: 100%;
   @include at-small  { width: 50%; }
-  @include at-medium { width: 33%; }
-  @include at-large  { width: 25%; }
 }
 ```
 
@@ -52,19 +50,11 @@ CSS
 @media (min-width: 768px) {
   .col { width: 50%; }
 }
-
-@media (min-width: 992px) {
-  .col { width: 33%; }
-}
-
-@media (min-width: 1200px) {
-  .col { width: 25%; }
-}
 ```
 
 ## License
 
-Copyright (c) 2016 Manu Morante
+Copyright (c) 2017 Manu Morante
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

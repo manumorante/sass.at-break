@@ -25,6 +25,8 @@
     <p>This mixin is perfect to use in your Bootstrap project. It is using the default sizes</p>
   </header>
 
+<h3>Usage</h3>
+
 <pre>
 <code class="scss">
   @import 'at-break';
@@ -35,9 +37,33 @@
     @include at-medium { width: 33%; }
     @include at-large  { width: 25%; }
   }
+</code>
+</pre>
 
-  .on-mobile {
-    @include at-small-only  { display: block; }
+<h3>Output</h3>
+
+<pre>
+<code class=scss">
+  .col {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .col {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col {
+      width: 33%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .col {
+      width: 25%;
+    }
   }
 </code>
 </pre>
@@ -45,22 +71,14 @@
   <a class="btn btn-default" href="https://github.com/manumorante/sass.at-break/" target="_blank">
     <i class="fa fa-github-alt"></i> View on GitHub</a>
 
-  <h3>
-    Mobile-first breakpoints
-    <span class="at-none">none </span>
+  <div class="current-size">
+    <strong>Your current size </strong>
+    <span class="at-none">default </span>
     <span class="at-xsmall">xsmall </span>
     <span class="at-small">small </span>
     <span class="at-medium">medium </span>
     <span class="at-large">large </span>
-  </h3>
-
-  <h3>
-    You can see this only in
-    <span class="at-xsmall-only">xsmall</span>
-    <span class="at-small-only">small</span>
-    <span class="at-medium-only">medium</span>
-    <span class="at-large-only">large.</span>
-  </h3>
+  </div>
 
 </div>
 
