@@ -8,8 +8,6 @@
 
 # Your ignore rules
 # *****************
-build
-.publish
 
 
 # SASS

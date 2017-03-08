@@ -1,0 +1,20 @@
+@import "//codepen.io/unavezfui/pen/FsGHp.css";
+h3 span { color: #8ca1ba; }
+
+.at-xsmall, .at-small, .at-medium, .at-large { display: none; }
+
+@media (min-width: 480px) { .at-xsmall { display: inline; } }
+@media (min-width: 768px) { .at-small { display: inline; } }
+@media (min-width: 992px) { .at-medium { display: inline; } }
+@media (min-width: 1200px) { .at-large { display: inline; } }
+body { padding-bottom: 200px; color: #5f7a9b; background-color: rgba(141, 161, 185, 0.1); }
+
+h1 { color: #42556b; margin: 40px 0 15px 0; }
+
+h2 { margin: -10px 0 15px 0; }
+
+.current-size { display: block; margin: 20px 0; padding: 2.5rem; font-size: 24px; background-color: rgba(141, 161, 185, 0.2); border-radius: 1rem; }
+
+header { margin: 0 0 50px 0; }
+
+.alert-info { position: absolute; bottom: 0; }
