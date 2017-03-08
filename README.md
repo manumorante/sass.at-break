@@ -4,7 +4,7 @@
 
 ## Requirements
 
-Requires Sass 3.2
+Requires Sass 3.3
 
 ## Install
 
