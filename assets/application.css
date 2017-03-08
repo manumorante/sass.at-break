@@ -1,0 +1,121 @@
+@import "//codepen.io/unavezfui/pen/FsGHp.css";
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none; }
+
+.hljs-comment, .diff .hljs-header, .hljs-javadoc {
+  color: #998;
+  font-style: italic; }
+
+.hljs-keyword, .css .rule .hljs-keyword, .hljs-winutils, .nginx .hljs-title, .hljs-subst, .hljs-request, .hljs-status {
+  color: #333;
+  font-weight: bold; }
+
+.hljs-number, .hljs-hexcolor, .ruby .hljs-constant {
+  color: #008080; }
+
+.hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .hljs-dartdoc, .tex .hljs-formula {
+  color: #d14; }
+
+.hljs-title, .hljs-id, .scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold; }
+
+.hljs-list .hljs-keyword, .hljs-subst {
+  font-weight: normal; }
+
+.hljs-class .hljs-title, .hljs-type, .vhdl .hljs-literal, .tex .hljs-command {
+  color: #458;
+  font-weight: bold; }
+
+.hljs-tag, .hljs-tag .hljs-title, .hljs-rules .hljs-property, .django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal; }
+
+.hljs-attribute, .hljs-variable, .lisp .hljs-body {
+  color: #008080; }
+
+.hljs-regexp {
+  color: #009926; }
+
+.hljs-symbol, .ruby .hljs-symbol .hljs-string, .lisp .hljs-keyword, .clojure .hljs-keyword, .scheme .hljs-keyword, .tex .hljs-special, .hljs-prompt {
+  color: #990073; }
+
+.hljs-built_in {
+  color: #0086b3; }
+
+.hljs-preprocessor, .hljs-pragma, .hljs-pi, .hljs-doctype, .hljs-shebang, .hljs-cdata {
+  color: #999;
+  font-weight: bold; }
+
+.hljs-deletion {
+  background: #fdd; }
+
+.hljs-addition {
+  background: #dfd; }
+
+.diff .hljs-change {
+  background: #0086b3; }
+
+.hljs-chunk {
+  color: #aaa; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+h3 span {
+  color: #8ca1ba; }
+
+.at-xsmall,
+.at-small,
+.at-medium,
+.at-large {
+  display: none; }
+
+@media (min-width: 480px) {
+  .at-xsmall {
+    display: inline; } }
+
+@media (min-width: 768px) {
+  .at-small {
+    display: inline; } }
+
+@media (min-width: 992px) {
+  .at-medium {
+    display: inline; } }
+
+@media (min-width: 1200px) {
+  .at-large {
+    display: inline; } }
+
+body {
+  padding-bottom: 200px;
+  color: #5f7a9b;
+  background-color: rgba(141, 161, 185, 0.1); }
+
+h1 {
+  color: #42556b;
+  margin: 40px 0 15px 0; }
+
+h2 {
+  margin: -10px 0 15px 0; }
+
+.current-size {
+  display: block;
+  margin: 20px 0;
+  padding: 2.5rem;
+  font-size: 24px;
+  background-color: rgba(141, 161, 185, 0.2);
+  border-radius: 1rem; }
+
+header {
+  margin: 0 0 50px 0; }
+
+.alert-info {
+  position: absolute;
+  bottom: 0; }

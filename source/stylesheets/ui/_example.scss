@@ -1,11 +1,16 @@
 // At Break Library
-@import 'libs/at-break';
+@import '../libs/at-break';
+@import '../libs/highlight.github';
 
 // About Manu Morante
 @import "//codepen.io/unavezfui/pen/FsGHp.css";
 
-// Example:
 $bp-color: #8DA1B9;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 h3 span {
   color: saturate($bp-color, 1);
